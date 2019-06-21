@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Mastermind</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div id="wrap">
+    <div id="content">
+        <h1>MASTER MIND</h1>
+        <table>
+            <tr>
+                <td><img th:src="${a0}"/></td>
+                <td><img th:src="${a1}"/></td>
+                <td><img th:src="${a2}"/></td>
+                <td><img th:src="${a3}"/></td>
+                <td colspan="4"><h4 th:text=" ${costam}"></h4></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a80}"/></td>
+                <td><img th:src="${a81}"/></td>
+                <td><img th:src="${a82}"/></td>
+                <td><img th:src="${a83}"/></td>
+                <td style="width: 30px"><img th:src="${a84}"/></td>
+                <td style="width: 30px"><img th:src="${a85}"/></td>
+                <td style="width: 30px"><img th:src="${a86}"/></td>
+                <td style="width: 30px"><img th:src="${a87}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a72}"/></td>
+                <td><img th:src="${a73}"/></td>
+                <td><img th:src="${a74}"/></td>
+                <td><img th:src="${a75}"/></td>
+                <td style="width: 30px"><img th:src="${a76}"/></td>
+                <td style="width: 30px"><img th:src="${a77}"/></td>
+                <td style="width: 30px"><img th:src="${a78}"/></td>
+                <td style="width: 30px"><img th:src="${a79}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a64}"/></td>
+                <td><img th:src="${a65}"/></td>
+                <td><img th:src="${a66}"/></td>
+                <td><img th:src="${a67}"/></td>
+                <td style="width: 30px"><img th:src="${a68}"/></td>
+                <td style="width: 30px"><img th:src="${a69}"/></td>
+                <td style="width: 30px"><img th:src="${a70}"/></td>
+                <td style="width: 30px"><img th:src="${a71}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a56}"/></td>
+                <td><img th:src="${a57}"/></td>
+                <td><img th:src="${a58}"/></td>
+                <td><img th:src="${a59}"/></td>
+                <td style="width: 30px"><img th:src="${a60}"/></td>
+                <td style="width: 30px"><img th:src="${a61}"/></td>
+                <td style="width: 30px"><img th:src="${a62}"/></td>
+                <td style="width: 30px"><img th:src="${a63}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a48}"/></td>
+                <td><img th:src="${a49}"/></td>
+                <td><img th:src="${a50}"/></td>
+                <td><img th:src="${a51}"/></td>
+                <td style="width: 30px"><img th:src="${a52}"/></td>
+                <td style="width: 30px"><img th:src="${a53}"/></td>
+                <td style="width: 30px"><img th:src="${a54}"/></td>
+                <td style="width: 30px"><img th:src="${a55}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a40}"/></td>
+                <td><img th:src="${a41}"/></td>
+                <td><img th:src="${a42}"/></td>
+                <td><img th:src="${a43}"/></td>
+                <td style="width: 30px"><img th:src="${a44}"/></td>
+                <td style="width: 30px"><img th:src="${a45}"/></td>
+                <td style="width: 30px"><img th:src="${a46}"/></td>
+                <td style="width: 30px"><img th:src="${a47}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a32}"/></td>
+                <td><img th:src="${a33}"/></td>
+                <td><img th:src="${a34}"/></td>
+                <td><img th:src="${a35}"/></td>
+                <td style="width: 30px"><img th:src="${a36}"/></td>
+                <td style="width: 30px"><img th:src="${a37}"/></td>
+                <td style="width: 30px"><img th:src="${a38}"/></td>
+                <td style="width: 30px"><img th:src="${a39}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a24}"/></td>
+                <td><img th:src="${a25}"/></td>
+                <td><img th:src="${a26}"/></td>
+                <td><img th:src="${a27}"/></td>
+                <td style="width: 30px"><img th:src="${a28}"/></td>
+                <td style="width: 30px"><img th:src="${a29}"/></td>
+                <td style="width: 30px"><img th:src="${a30}"/></td>
+                <td style="width: 30px"><img th:src="${a31}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a16}"/></td>
+                <td><img th:src="${a17}"/></td>
+                <td><img th:src="${a18}"/></td>
+                <td><img th:src="${a19}"/></td>
+                <td style="width: 30px"><img th:src="${a20}"/></td>
+                <td style="width: 30px"><img th:src="${a21}"/></td>
+                <td style="width: 30px"><img th:src="${a22}"/></td>
+                <td style="width: 30px"><img th:src="${a23}"/></td>
+            </tr>
+            <tr>
+                <td><img th:src="${a8}"/></td>
+                <td><img th:src="${a9}"/></td>
+                <td><img th:src="${a10}"/></td>
+                <td><img th:src="${a11}"/></td>
+                <td style="width: 30px"><img th:src="${a12}"/></td>
+                <td style="width: 30px"><img th:src="${a13}"/></td>
+                <td style="width: 30px"><img th:src="${a14}"/></td>
+                <td style="width: 30px"><img th:src="${a15}"/></td>
+            </tr>
+        </table>
+        <br/>
+          <form style="float: right" metod="get" action="/">
+            <input type="submit" value="New game">
+        </form>
+       <form style="float: left" metod="get" action="/color">
+        <select name="color">
+            <option value="v">Vio</option>
+            <option value="r">Red</option>
+            <option value="b">Blu</option>
+            <option value="g">Gre</option>
+            <option value="o">Ora</option>
+            <option value="y">Yel</option>
+        </select>
+        <select name="color">
+            <option value="v">Vio</option>
+            <option value="r">Red</option>
+            <option value="b">Blu</option>
+            <option value="g">Gre</option>
+            <option value="o">Ora</option>
+            <option value="y">Yel</option>
+        </select>
+        <select name="color">
+            <option value="v">Vio</option>
+            <option value="r">Red</option>
+            <option value="b">Blu</option>
+            <option value="g">Gre</option>
+            <option value="o">Ora</option>
+            <option value="y">Yel</option>
+        </select>
+        <select name="color">
+            <option value="v">Vio</option>
+            <option value="r">Red</option>
+            <option value="b">Blu</option>
+            <option value="g">Gre</option>
+            <option value="o">Ora</option>
+            <option value="y">Yel</option>
+        </select>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Check"/>
+        </form>
+        </div>
+    <div id="menu">
+        <a href="https://pl.wikipedia.org/wiki/Mastermind_(gra_planszowa)"><img th:src="@{/img/mind1.png}"/></a>
+        <br/><br/>
+        <ul>
+            <li><a href="https://pl.wikipedia.org/wiki/Mastermind_(gra_planszowa)">Mastermind - opis</a></li>
+            <li><a href="https://github.com/stewor/masterheroku">GitHub</a></li>
+        </ul>
+        <br/><br/>
+        <img th:src="@{/img/Razem.png}"/>
+    </div>
+    <div id="footer">
+        &copy; Copyright 2019 by <a href="https://www.facebook.com/stefan.woronkiewicz">stewor</a>
+    </div>
+</div>
+</body>
+</html>
